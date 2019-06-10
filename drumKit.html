@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS DrumKit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="keys">
+    <div data-key="65" class="key">
+      <!-- CHECK KEYCODE.INFO FOR MORE INFROMATION ON KEYCODE -->
+      <kbd>A</kbd>
+      <span class="sound">Clap</span>
+    </div>
+
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">Disco</span>
+    </div>
+
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">Bass-Drum</span>
+    </div>
+
+    <div data-key="70" class="key">
+      <kbd>F<kbd>
+          <span class="sound">Alesis-Sanctuary</span>
+    </div>
+
+
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">Boom-Kick</span>
+    </div>
+
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">Alans-Run</span>
+    </div>
+
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">Samba</span>
+    </div>
+
+    <div data-key="75" class="key">
+      <kbd>k</kbd>
+      <span class="sound">Casio-Brass</span>
+    </div>
+
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">Classic-Guitar</span>
+    </div>
+  </div>
+  <audio data-key="65" src="sounds/Clap.wav"></audio>
+  <audio data-key="83" src="sounds/Disco.wav"></audio>
+  <audio data-key="68" src="sounds/Bass-Drum.wav"></audio>
+  <audio data-key="70" src="sounds/Alesis-Sanc.wav"></audio>
+  <audio data-key="71" src="sounds/Boom-Kick.wav"></audio>
+  <audio data-key="72" src="sounds/Alans-Run.wav"></audio>
+  <audio data-key="74" src="sounds/Samba.wav"></audio>
+  <audio data-key="75" src="sounds/Casio-Brass.wav"></audio>
+  <audio data-key="76" src="sounds/Classic-Guitar.wav"></audio>
+
+  <script>
+    // function playSound(e) {
+    //   console.log('playsound')
+    //   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); /*select audio*/
+    //   const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);/*select key*/
+    //   if (!audio) return; /*if not audio return nothing*/
+    //   audio.currentTime = 0; /*sets currenttime to 0*/
+    //   audio.play(); /*plays audio*/
+    //   key.classList.add('playing'); /*add playing to keys*/
+     //   key.addClass('playing');
+    // }
+
+    // function removeTransition(e) {
+    //   if (e.propertyName !== 'transform') return; /*if not transform return nothing*/
+    //   this.classList.remove('playing'); /*remove classlist after transition has played*/
+    //   console.log(this)
+    // }
+
+    // const keys = document.querySelectorAll('.key');
+    // keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+    // window.addEventListener('keydown', playSound);
+  // window.addEventListener('keydown', playSound);
+  window.addEventListener('keydown', function(e){
+    // console.log(e.keyCode)
+    console.error(log)
+  });
+
+  </script>
+</body>
+
+</html>
